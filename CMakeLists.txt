@@ -15,7 +15,7 @@ file(GLOB_RECURSE SRC
     "src/*.c"
 )
 
-project(${PROJECT_NAME})
+project(${PROJECT_NAME} VERSION 1.0.0 LANGUAGES CXX)
 
 add_library(${PROJECT_NAME} ${INC} ${SRC})
 
