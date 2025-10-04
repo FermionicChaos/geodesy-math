@@ -56,7 +56,7 @@ if (MSVC)
     # MSVC projects are multi-config, so use generator expressions
     # MSVC: /O2 = optimize, /fp:fast = relaxed floating point,
     # /arch:AVX2 = use AVX2 if available
-    target_compile_options(${GEODESY_LIBRARY} PUBLIC 
+    target_compile_options(${PROJECT_NAME} PUBLIC 
         $<$<CONFIG:Debug,RelWithDebInfo>:>
         $<$<CONFIG:Release,MinSizeRel>:
             /O2 
@@ -68,9 +68,9 @@ if (MSVC)
 elseif (CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR CMAKE_CXX_COMPILER_ID MATCHES "GNU")
     # GCC or Clang: optimize, relaxed FP, enable AVX2/FMA
     if (CMAKE_BUILD_TYPE STREQUAL "Debug")
-        # target_compile_options(${GEODESY_LIBRARY} PUBLIC -O0 -g)
+        # target_compile_options(${PROJECT_NAME} PUBLIC -O0 -g)
     else()
-        target_compile_options(${GEODESY_LIBRARY} PUBLIC 
+        target_compile_options(${PROJECT_NAME} PUBLIC 
             -O3 
             -ffast-math 
             -mavx2 
