@@ -1,12 +1,12 @@
-#pragma once
-#ifndef GEODESY_CORE_MATH_VEC_H
-#define GEODESY_CORE_MATH_VEC_H
+
+#ifndef GEODESY_MATH_VEC_H
+#define GEODESY_MATH_VEC_H
 
 #include "config.h"
 #include "complex.h"
 #include "quaternion.h"
 
-namespace geodesy::core::math {
+namespace geodesy::math {
 
 	template <typename T, std::size_t N>
 	class vec : public std::array<T, N>{
@@ -207,4 +207,4 @@ namespace geodesy::core::math {
 
 }
 
-#endif // !GEODESY_CORE_MATH_VEC_H
+#endif // !GEODESY_MATH_VEC_H

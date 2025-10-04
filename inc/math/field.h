@@ -1,6 +1,6 @@
-#pragma once
-#ifndef GEODESY_CORE_MATH_FIELD_H
-#define GEODESY_CORE_MATH_FIELD_H
+
+#ifndef GEODESY_MATH_FIELD_H
+#define GEODESY_MATH_FIELD_H
 
 // ------------------------------ field.h ------------------------------ //
 /*
@@ -24,7 +24,7 @@ field<float, 1, float> y = 10f * 0.5f * (sin(x * x) + 1.0f);
 #include "vec.h"
 #include <omp.h>
 
-namespace geodesy::core::math {
+namespace geodesy::math {
 
 	// Compile-time calculation of power of two using constexpr.
 	constexpr std::size_t power_of_two(std::size_t n) {
@@ -735,4 +735,4 @@ namespace geodesy::core::math {
 
 }
 
-#endif // !GEODESY_CORE_MATH_FIELD_H
+#endif // !GEODESY_MATH_FIELD_H

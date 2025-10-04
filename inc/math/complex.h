@@ -1,12 +1,12 @@
-#pragma once
-#ifndef GEODESY_CORE_MATH_COMPLEX_H
-#define GEODESY_CORE_MATH_COMPLEX_H
+
+#ifndef GEODESY_MATH_COMPLEX_H
+#define GEODESY_MATH_COMPLEX_H
 
 #include "config.h"
 #include "type.h"
 #include "constants.h"
 
-namespace geodesy::core::math {
+namespace geodesy::math {
 
 	template <typename T>
 	class complex : public std::array<T, 2> {
@@ -249,4 +249,4 @@ namespace geodesy::core::math {
 
 }
 
-#endif // !GEODESY_CORE_MATH_COMPLEX_H
+#endif // !GEODESY_MATH_COMPLEX_H

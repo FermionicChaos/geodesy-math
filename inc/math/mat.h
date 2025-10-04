@@ -1,14 +1,14 @@
 
-#pragma once
-#ifndef GEODESY_CORE_MATH_MAT_H
-#define GEODESY_CORE_MATH_MAT_H
+
+#ifndef GEODESY_MATH_MAT_H
+#define GEODESY_MATH_MAT_H
 
 #include "config.h"
 #include "complex.h"
 #include "quaternion.h"
 #include "vec.h"
 
-namespace geodesy::core::math {
+namespace geodesy::math {
 
 	template <typename T, std::size_t M, std::size_t N>
 	class mat : public std::array<T, M*N> {
@@ -458,4 +458,4 @@ namespace geodesy::core::math {
 
 }
 
-#endif // !GEODESY_CORE_MATH_MAT_H
+#endif // !GEODESY_MATH_MAT_H

@@ -1,6 +1,6 @@
-#pragma once
-#ifndef GEODESY_CORE_MATH_NUMBER_TYPE_H
-#define GEODESY_CORE_MATH_NUMBER_TYPE_H
+
+#ifndef GEODESY_MATH_NUMBER_TYPE_H
+#define GEODESY_MATH_NUMBER_TYPE_H
 
 typedef unsigned char uchar;
 typedef unsigned short ushort;
@@ -14,7 +14,7 @@ typedef unsigned int uint;
 //typedef double;
 
 /*
-namespace geodesy::core::math {
+namespace geodesy::math {
 
 	// Apparently windows has their own definitions. 
 #ifndef _WINDOWS_
@@ -40,4 +40,4 @@ namespace geodesy::core::math {
 }
 */
 
-#endif // !GEODESY_CORE_MATH_NUMBER_TYPE_H
+#endif // !GEODESY_MATH_NUMBER_TYPE_H

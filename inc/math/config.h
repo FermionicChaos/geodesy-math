@@ -1,7 +1,7 @@
 
-#pragma once
-#ifndef GEODESY_CORE_MATH_CONFIG_H
-#define GEODESY_CORE_MATH_CONFIG_H
+
+#ifndef GEODESY_MATH_CONFIG_H
+#define GEODESY_MATH_CONFIG_H
 
 #include <array>
 #include <type_traits>
@@ -10,7 +10,7 @@
 #include <algorithm>
 #include <limits>
 
-namespace geodesy::core::math {
+namespace geodesy::math {
 
 	// ------------------------- Vector Space Control Logic ------------------------- //
 
@@ -138,4 +138,4 @@ namespace geodesy::core::math {
 
 }
 
-#endif // !GEODESY_CORE_MATH_CONFIG_H
+#endif // !GEODESY_MATH_CONFIG_H

@@ -1,6 +1,6 @@
-#pragma once
-#ifndef GEODESY_CORE_MATH_QUATERNION_H
-#define GEODESY_CORE_MATH_QUATERNION_H
+
+#ifndef GEODESY_MATH_QUATERNION_H
+#define GEODESY_MATH_QUATERNION_H
 
 #include "config.h"
 #include "type.h"
@@ -53,7 +53,7 @@
 // $$ \vec{r}^{\prime} = e^{\frac{\theta}{2}\hat{v}} \; \vec{r} \; e^{-\frac{\theta}{2}\hat{v}} $$
 // ----- Rotation of Quaternions -----
 
-namespace geodesy::core::math {
+namespace geodesy::math {
 
 	template <typename T>
 	class quaternion : public std::array<T, 4> {
@@ -299,4 +299,4 @@ namespace geodesy::core::math {
 
 }
 
-#endif // !GEODESY_CORE_MATH_QUATERNION_H
+#endif // !GEODESY_MATH_QUATERNION_H
